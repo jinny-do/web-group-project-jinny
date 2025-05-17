@@ -1,0 +1,12 @@
+# 환경 변수
+.env
+
+# Google 서비스 계정 키
+server/config/service-account-key.json
+
+# 의존성 디렉터리
+node_modules/
+
+# 편집기 설정 파일 등 필요에 따라 추가
+.vscode/
+.DS_Store

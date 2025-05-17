@@ -1,0 +1,32 @@
+/* 모달 전체 스타일 */
+.my-modal .modal-content {
+    border-radius: 16px;
+    border: 2px solid #c3c3c3;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    background-color: #fffefa;
+}
+
+.modal-header-custom {
+    background-color: #f3eeff;
+    border-bottom: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.modal-body-custom {
+    padding: 25px;
+}
+
+.pink-button {
+    background-color: #a68ade !important;
+    border: none !important;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.pink-button:hover {
+    background-color: #8944c9 !important;
+}

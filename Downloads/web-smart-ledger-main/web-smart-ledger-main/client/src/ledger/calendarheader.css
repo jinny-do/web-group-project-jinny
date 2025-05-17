@@ -1,0 +1,60 @@
+.calendar-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-button {
+    border: none;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: background-color 0.2s ease;
+    font-size: 1em;
+    text-align: center;
+}
+
+.nav-button:hover {
+    color: #958ec9;
+}
+
+.nav-button:active {
+    color: rgb(60, 50, 108);
+}
+
+.date-text {
+    font-size: 25px;
+    text-align: center;
+}
+
+.calendar-icon {
+    cursor: pointer;
+    font-size: 25px;
+    transition: color 0.2s ease;
+    margin-top: 5px;
+}
+
+.calendar-icon:hover {
+    color: #958ec9;
+}
+
+.calendar-popup {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 8px;
+    padding: 20px;
+    padding-right: 70px;
+    z-index: 9999;
+}

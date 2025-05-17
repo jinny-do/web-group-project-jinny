@@ -1,0 +1,38 @@
+.custom-navbar {
+    background-color: #d5d1f5 !important;
+
+    padding: 4px 20px !important;
+    margin-top: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+/* 로고 */
+.navbar-logo {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    margin-left: 30px;
+}
+
+/* 메뉴 */
+.header-right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* 메뉴 링크 스타일 */
+.header-right .nav-link {
+    color: rgb(96, 80, 106);
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-right .nav-link.active {
+    color: #ffe8a1 !important;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}

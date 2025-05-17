@@ -1,0 +1,68 @@
+/* 수정 모달 - 기존 레이아웃과 자연스럽게 어우러지도록 구성 */
+.edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* 기존 레이아웃에 어울리도록 약간 연하게 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-content input,
+.modal-content select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.modal-buttons button {
+    flex: 1;
+    margin: 0 4px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal-buttons button:first-child {
+    background-color: #c7e7d8;
+}
+.modal-buttons button:first-child:hover {
+    background-color: #8fc9ab;
+}
+
+.modal-buttons button:last-child {
+    background-color: #f1f1f1;
+}
+.modal-buttons button:last-child:hover {
+    background-color: #dcdcdc;
+}
