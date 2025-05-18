@@ -1,0 +1,198 @@
+.detail-container {
+    padding: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.category-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.category-total-card {
+    background-color: #f7ecbd;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.category-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #ffffff;
+    height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.category-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.category-list li.empty {
+    font-style: italic;
+    color: #aaa;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    margin-bottom: 5px;
+}
+
+.action-btn {
+    display: flex;
+    gap: 4px;
+}
+
+.buttons {
+    padding: 4px 4px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+}
+
+/* 수정 버튼 */
+.edit-btn:hover {
+    background-color: #c7e7d8; /* 연한 초록 */
+}
+.edit-btn:active {
+    background-color: #8fc9ab; /* 진한 초록 */
+}
+
+/* 삭제 버튼 */
+.delete-btn:hover {
+    background-color: #edc2c6; /* 연한 빨강 */
+}
+.delete-btn:active {
+    background-color: #db8a92; /* 진한 빨강 */
+}
+
+/* 수정모달! */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fffffd;
+    padding: 50px;
+    border-radius: 12px;
+    width: 400px;
+}
+
+.modal-btns {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-content h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+.modal-content input:focus {
+    border-color: #765396;
+    outline: none;
+    box-shadow: 0 0 0 1.5px rgba(130, 52, 219, 0.2);
+}
+
+.modal-btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-btns button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal-btns button[type='submit'] {
+    background-color: rgb(177, 142, 200);
+    color: white;
+}
+
+.modal-btns button[type='submit']:hover {
+    background-color: #765396;
+}
+
+.modal-btns button:not([type='submit']) {
+    background-color: #eee;
+    color: #555;
+}
+
+.modal-btns button:not([type='submit']):hover {
+    background-color: #ddd;
+}

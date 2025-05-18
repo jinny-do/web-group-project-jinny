@@ -1,0 +1,39 @@
+/* upload.css */
+.camera-icon {
+    font-size: 13em;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    color: rgb(65, 49, 77);
+}
+
+.text {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(80, 66, 90);
+}
+
+.camera-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.camera-button {
+    width: 380px;
+    padding: 17px;
+    margin: 10px;
+    font-size: 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(179, 147, 201);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 450;
+}
+
+.camera-button:hover {
+    background-color: #472566;
+}
